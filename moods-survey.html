@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diagnose Your Moods Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+              <h1 id="title" class="text-center">Diagnose Your Moods Survey
+              </h1></header>
+              <p id="description" class="description text-center">This is a reproduction of "The Burns Depression Checklist" from his book "Feeling Good: The New Mood Therapy".
+          
+          Copyright © 1984 by David D. Burns, M.D. (Revised, 1996.) **Anyone with suicidal urges should seek help from a mental health professional.
+          
+          This reproduction is made for educational purposes as part of the freecodecamp.com Responsive Web Design Project. </p>
+            <form id="survey-form">
+          <!-- Basic Info Collection -->
+              <div class="form-group-basic">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+                 <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                />
+                <label id="number-label" for="number"
+                  >Age<span class="clue">(optional)</span></label
+                >
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="Age"
+                />   
+                <div class="form-group-basic">
+                <p>Which options best describes your current occupation?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select current occupation</option>
+                  <option value="student">Student</option>
+                  <option value="job">Full Time Employed</option>
+                  <option value="learner">Part Time Employed</option>
+                  <option value="preferNo">Prefer not to say</option>
+                </select>
+                </div>
+          <!-- Start of Survey -->
+                <div class="form-group-main">
+                  <p>Select your thoughts and feelings in the last 7 days</p>
+                    <div class="form-group-main-1">
+                            <p>1. Feeling sad or down in the dumps</p>
+                              <label for="user-answer1">
+                                <input
+                                  name="user-answer1"
+                                  id="user-answer1-0"
+                                  value="0"
+                                  type="radio"
+                                  class="input-radio"
+                                  checked
+                                />Not At All</label>
+                              <label for="user-answer1">
+                                <input
+                                  name="user-answer1"
+                                  id="user-answer1-1"
+                                  value="1"
+                                  type="radio"
+                                  class="input-radio"
+                                       />Somewhat</label>
+                              <label for="user-answer1">
+                                <input
+                                  name="user-answer1"
+                                  id="user-answer1-2"
+                                  value="2"
+                                  type="radio"
+                                  class="input-radio"
+                                />Moderately</label>    
+                              <label for="user-answer1">
+                                <input
+                                  name="user-answer1"
+                                  id="user-answer1-3"
+                                  value="3"
+                                  type="radio"
+                                  class="input-radio"
+                                />A lot</label>         
+                              <label for="user-answer1">
+                                <input
+                                  name="user-answer1"
+                                  id="user-answer1-4"
+                                  value="4"
+                                  type="radio"
+                                  class="input-radio"
+                                />Extremely</label>
+                            <p>2. Feeling unhappy or blue</p>
+                            <label for="user-answer2">
+                              <input
+                                name="user-answer2"
+                                id="user-answer2-0"
+                                value="0"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />Not At All</label>
+                            <label for="user-answer2">
+                              <input
+                                name="user-answer2"
+                                id="user-answer2-1"
+                                value="1"
+                                type="radio"
+                                class="input-radio"
+                                     />Somewhat</label>
+                            <label for="user-answer2">
+                              <input
+                                name="user-answer2"
+                                id="user-answer2-2"
+                                value="2"
+                                type="radio"
+                                class="input-radio"
+                              />Moderately</label>    
+                            <label for="user-answer2">
+                              <input
+                                name="user-answer2"
+                                id="user-answer2-3"
+                                value="3"
+                                type="radio"
+                                class="input-radio"
+                              />A lot</label>         
+                            <label for="user-answer2">
+                              <input
+                                name="user-answer2"
+                                id="user-answer2-4"
+                                value="4"
+                                type="radio"
+                                class="input-radio"
+                              />Extremely</label>
+                            <p>3. Crying spells or tearfulness</p>
+                            <label for="user-answer3">
+                              <input
+                                name="user-answer3"
+                                id="user-answer3-0"
+                                value="0"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />Not At All</label>
+                            <label for="user-answer3">
+                              <input
+                                name="user-answer3"
+                                id="user-answer3-1"
+                                value="1"
+                                type="radio"
+                                class="input-radio"
+                                     />Somewhat</label>
+                            <label for="user-answer3">
+                              <input
+                                name="user-answer3"
+                                id="user-answer3-2"
+                                value="2"
+                                type="radio"
+                                class="input-radio"
+                              />Moderately</label>    
+                            <label for="user-answer3">
+                              <input
+                                name="user-answer3"
+                                id="user-answer3-3"
+                                value="3"
+                                type="radio"
+                                class="input-radio"
+                              />A lot</label>         
+                            <label for="user-answer3">
+                              <input
+                                name="user-answer3"
+                                id="user-answer3-4"
+                                value="4"
+                                type="radio"
+                                class="input-radio"
+                              />Extremely</label>
+                            <p>4. Feeling discouraged</p>
+                            <label for="user-answer4">
+                              <input
+                                name="user-answer4"
+                                id="user-answer4-0"
+                                value="0"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />Not At All</label>
+                            <label for="user-answer4">
+                              <input
+                                name="user-answer4"
+                                id="user-answer4-1"
+                                value="1"
+                                type="radio"
+                                class="input-radio"
+                                     />Somewhat</label>
+                            <label for="user-answer4">
+                              <input
+                                name="user-answer4"
+                                id="user-answer4-2"
+                                value="2"
+                                type="radio"
+                                class="input-radio"
+                              />Moderately</label>    
+                            <label for="user-answer4">
+                              <input
+                                name="user-answer4"
+                                id="user-answer4-3"
+                                value="3"
+                                type="radio"
+                                class="input-radio"
+                              />A lot</label>         
+                            <label for="user-answer4">
+                              <input
+                                name="user-answer4"
+                                id="user-answer4-4"
+                                value="4"
+                                type="radio"
+                                class="input-radio"
+                              />Extremely</label>
+                            <p>5. Feeling hopeless</p>
+                            <label for="user-answer5">
+                              <input
+                                name="user-answer5"
+                                id="user-answer5-0"
+                                value="0"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />Not At All</label>
+                            <label for="user-answer5">
+                              <input
+                                name="user-answer5"
+                                id="user-answer5-1"
+                                value="1"
+                                type="radio"
+                                class="input-radio"
+                                     />Somewhat</label>
+                            <label for="user-answer5">
+                              <input
+                                name="user-answer5"
+                                id="user-answer5-2"
+                                value="2"
+                                type="radio"
+                                class="input-radio"
+                              />Moderately</label>    
+                            <label for="user-answer5">
+                              <input
+                                name="user-answer5"
+                                id="user-answer5-3"
+                                value="3"
+                                type="radio"
+                                class="input-radio"
+                              />A lot</label>         
+                            <label for="user-answer5">
+                              <input
+                                name="user-answer5"
+                                id="user-answer5-4"
+                                value="4"
+                                type="radio"
+                                class="input-radio"
+                              />Extremely</label>
+                            <p>6. Low self-esteem</p>
+                            <label for="user-answer6">
+                              <input
+                                name="user-answer6"
+                                id="user-answer6-0"
+                                value="0"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />Not At All</label>
+                            <label for="user-answer6">
+                              <input
+                                name="user-answer6"
+                                id="user-answer6-1"
+                                value="1"
+                                type="radio"
+                                class="input-radio"
+                                     />Somewhat</label>
+                            <label for="user-answer6">
+                              <input
+                                name="user-answer6"
+                                id="user-answer6-2"
+                                value="2"
+                                type="radio"
+                                class="input-radio"
+                              />Moderately</label>    
+                            <label for="user-answer6">
+                              <input
+                                name="user-answer6"
+                                id="user-answer6-3"
+                                value="3"
+                                type="radio"
+                                class="input-radio"
+                              />A lot</label>         
+                            <label for="user-answer6">
+                              <input
+                                name="user-answer6"
+                                id="user-answer6-4"
+                                value="4"
+                                type="radio"
+                                class="input-radio"
+                              />Extremely</label>
+                            <p>7. Feeling worthless or inadequate</p>
+                            <label for="user-answer7">
+                              <input
+                                name="user-answer7"
+                                id="user-answer7-0"
+                                value="0"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />Not At All</label>
+                            <label for="user-answer7">
+                              <input
+                                name="user-answer7"
+                                id="user-answer7-1"
+                                value="1"
+                                type="radio"
+                                class="input-radio"
+                                     />Somewhat</label>
+                            <label for="user-answer7">
+                              <input
+                                name="user-answer7"
+                                id="user-answer7-2"
+                                value="2"
+                                type="radio"
+                                class="input-radio"
+                              />Moderately</label>    
+                            <label for="user-answer7">
+                              <input
+                                name="user-answer7"
+                                id="user-answer7-3"
+                                value="3"
+                                type="radio"
+                                class="input-radio"
+                              />A lot</label>         
+                            <label for="user-answer7">
+                              <input
+                                name="user-answer7"
+                                id="user-answer1-4"
+                                value="4"
+                                type="radio"
+                                class="input-radio"
+                              />Extremely</label>
+                            <p>8. Guilt or shame</p>
+                            <label for="user-answer8">
+                              <input
+                                name="user-answer8"
+                                id="user-answer8-0"
+                                value="0"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />Not At All</label>
+                            <label for="user-answer8">
+                              <input
+                                name="user-answer8"
+                                id="user-answer8-1"
+                                value="1"
+                                type="radio"
+                                class="input-radio"
+                                     />Somewhat</label>
+                            <label for="user-answer8">
+                              <input
+                                name="user-answer8"
+                                id="user-answer8-2"
+                                value="2"
+                                type="radio"
+                                class="input-radio"
+                              />Moderately</label>    
+                            <label for="user-answer8">
+                              <input
+                                name="user-answer8"
+                                id="user-answer8-3"
+                                value="3"
+                                type="radio"
+                                class="input-radio"
+                              />A lot</label>         
+                            <label for="user-answer8">
+                              <input
+                                name="user-answer8"
+                                id="user-answer8-4"
+                                value="4"
+                                type="radio"
+                                class="input-radio"
+                              />Extremely</label>
+                            <p>9. Criticizing yourself or blaming others</p>
+                              <label for="user-answer9">
+                                <input
+                                  name="user-answer9"
+                                  id="user-answer9-0"
+                                  value="0"
+                                  type="radio"
+                                  class="input-radio"
+                                  checked
+                                />Not At All</label>
+                              <label for="user-answer9">
+                                <input
+                                  name="user-answer9"
+                                  id="user-answer9-1"
+                                  value="1"
+                                  type="radio"
+                                  class="input-radio"
+                                       />Somewhat</label>
+                              <label for="user-answer9">
+                                <input
+                                  name="user-answer9"
+                                  id="user-answer9-2"
+                                  value="2"
+                                  type="radio"
+                                  class="input-radio"
+                                />Moderately</label>    
+                              <label for="user-answer9">
+                                <input
+                                  name="user-answer9"
+                                  id="user-answer9-3"
+                                  value="3"
+                                  type="radio"
+                                  class="input-radio"
+                                />A lot</label>         
+                              <label for="user-answer9">
+                                <input
+                                  name="user-answer9"
+                                  id="user-answer9-4"
+                                  value="4"
+                                  type="radio"
+                                  class="input-radio"
+                                />Extremely</label>
+                            <p>10. Difficulty making decisions</p>
+                            <label for="user-answer1">
+                              <input
+                                name="user-answer10"
+                                id="user-answer10-0"
+                                value="0"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                              />Not At All</label>
+                            <label for="user-answer10">
+                              <input
+                                name="user-answer10"
+                                id="user-answer10-1"
+                                value="1"
+                                type="radio"
+                                class="input-radio"
+                                     />Somewhat</label>
+                            <label for="user-answer10">
+                              <input
+                                name="user-answer10"
+                                id="user-answer10-2"
+                                value="2"
+                                type="radio"
+                                class="input-radio"
+                              />Moderately</label>    
+                            <label for="user-answer10">
+                              <input
+                                name="user-answer10"
+                                id="user-answer10-3"
+                                value="3"
+                                type="radio"
+                                class="input-radio"
+                              />A lot</label>         
+                            <label for="user-answer10">
+                              <input
+                                name="user-answer10"
+                                id="user-answer10-4"
+                                value="4"
+                                type="radio"
+                                class="input-radio"
+                              />Extremely</label>
+          
+                    
+          <!-- Other sections       
+                  <p>Activites and Personal Relationships</p>
+                  <p>Physical Symptoms</p>
+                  <p>Suicidal Urges</p>
+          -->
+              <div class="form-group-end">
+                <p>
+                  What would you like to see improved?
+                  <span class="clue">(Check all that apply)</span>
+                </p>
+                <label><input
+                    name="prefer"
+                    value="depression"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Depression</label>
+                <label>
+                  <input
+                    name="prefer"
+                    value="anxiety"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Anxiety</label>
+                <label><input
+                    name="prefer"
+                    value="thoughts"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Thoughts</label>
+                <label><input
+                    name="prefer"
+                    value="feelings"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Feelings</label>
+                <label><input
+                    name="prefer"
+                    value="energy"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Energy</label>
+                <label><input
+                    name="prefer"
+                    value="relationships"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Personal Relationships</label>
+                <label><input
+                    name="prefer"
+                    value="health"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Physical Health</label>
+              </div>
+              <div class="form-group-end">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+              </div>
+          
+              <div class="form-group-end">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+           
+                
+              </div>
+            </form>
+            
+        </div>
+  <!-- JavaScript: date logic file and writing 'result'-->
+  <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
